@@ -1,6 +1,10 @@
 #**SASS-COLOR-JSON**
 *Convert any SASS file with color variables to a json file.*
-![Travis CI](https://img.shields.io/travis/tbremer/sass-color-json.svg?style=flat-square) ![Version](https://img.shields.io/npm/v/sass-color-json.svg) ![NPM Downloads](https://img.shields.io/npm/dm/sass-color-json.svg?style=flat-square) ![LICENSE](https://img.shields.io/npm/l/sass-color-json.svg)
+
+![Travis CI](https://img.shields.io/travis/tbremer/sass-color-json.svg?style=flat-square)
+![Version](https://img.shields.io/npm/v/sass-color-json.svg?style=flat-square)
+![NPM Downloads](https://img.shields.io/npm/dm/sass-color-json.svg?style=flat-square)
+![LICENSE](https://img.shields.io/npm/l/sass-color-json.svg?style=flat-square)
 
 We currently support:  hex colors (3 or 6 character), rgb, hsl, rgba & hsla.
 
@@ -131,9 +135,11 @@ console.log(jsonObj);
 
 ###*CLI Shortcuts*
 **input:** `-i, --file, -f`
+
 **output:** `-o`
 
 
 ###*Notes*
 If no output is suppled the module returns JSON Object.
+
 If output is only a directory module uses name `sass-variables.json`
