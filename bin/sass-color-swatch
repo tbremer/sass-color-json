@@ -1,0 +1,22 @@
+#!/usr/local/bin/node
+
+var	options,
+	app = require('../'),
+	nopt = require('nopt'),
+	knownOpts = {
+		"input": String,
+		"output": String
+	},
+	shortHand = {
+		"file": ["--input"],
+		"f": ["--input"],
+		"o": ["--output"]
+	},
+	parsed = nopt(knownOpts, shortHand, process.argv, 2);
+
+options = {
+	'input': parsed.input,
+	'output': parsed.output || false,
+};
+
+app(options);

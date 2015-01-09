@@ -1,0 +1,1984 @@
+{
+    "black": {
+        "aliases": [
+            "font-color"
+        ],
+        "isAlias": false,
+        "full": "$black: #373a3e;",
+        "original": {
+            "name": "$black:",
+            "value": "373a3e;",
+            "full": "$black:     #373a3e;"
+        },
+        "name": "black",
+        "type": "#",
+        "value": "373a3e"
+    },
+    "black_a50": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$black_a50: rgba($black, 0.5);",
+        "original": {
+            "name": "$black_a50:",
+            "value": "($black, 0.5);",
+            "full": "$black_a50: rgba($black, 0.5);"
+        },
+        "name": "black_a50",
+        "type": "rgba",
+        "value": "($black, 0.5)"
+    },
+    "black_a20": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$black_a20: rgba($black, 0.2);",
+        "original": {
+            "name": "$black_a20:",
+            "value": "($black, 0.2);",
+            "full": "$black_a20: rgba($black, 0.2);"
+        },
+        "name": "black_a20",
+        "type": "rgba",
+        "value": "($black, 0.2)"
+    },
+    "black_a10": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$black_a10: rgba($black, 0.1);",
+        "original": {
+            "name": "$black_a10:",
+            "value": "($black, 0.1);",
+            "full": "$black_a10: rgba($black, 0.1);"
+        },
+        "name": "black_a10",
+        "type": "rgba",
+        "value": "($black, 0.1)"
+    },
+    "white": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$white: #fff;",
+        "original": {
+            "name": "$white:",
+            "value": "fff;",
+            "full": "$white:     #fff;"
+        },
+        "name": "white",
+        "type": "#",
+        "value": "fff"
+    },
+    "white_a90": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$white_a90: rgba($white, 0.9);",
+        "original": {
+            "name": "$white_a90:",
+            "value": "($white, 0.9);",
+            "full": "$white_a90: rgba($white, 0.9);"
+        },
+        "name": "white_a90",
+        "type": "rgba",
+        "value": "($white, 0.9)"
+    },
+    "white_a70": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$white_a70: rgba($white, 0.7);",
+        "original": {
+            "name": "$white_a70:",
+            "value": "($white, 0.7);",
+            "full": "$white_a70: rgba($white, 0.7);"
+        },
+        "name": "white_a70",
+        "type": "rgba",
+        "value": "($white, 0.7)"
+    },
+    "white_a50": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$white_a50: rgba($white, 0.5);",
+        "original": {
+            "name": "$white_a50:",
+            "value": "($white, 0.5);",
+            "full": "$white_a50: rgba($white, 0.5);"
+        },
+        "name": "white_a50",
+        "type": "rgba",
+        "value": "($white, 0.5)"
+    },
+    "blue": {
+        "aliases": [
+            "newblue",
+            "new-blue",
+            "new_blue"
+        ],
+        "isAlias": false,
+        "full": "$blue: #136ad5;",
+        "original": {
+            "name": "$blue:",
+            "value": "136ad5;",
+            "full": "$blue:        #136ad5;"
+        },
+        "name": "blue",
+        "type": "#",
+        "value": "136ad5"
+    },
+    "newblue": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$newblue: $blue;",
+        "original": {
+            "name": "$newblue:",
+            "value": "blue;",
+            "full": "$newblue: $blue;"
+        },
+        "name": "newblue",
+        "type": "$",
+        "value": "blue"
+    },
+    "new-blue": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$new-blue: $blue;",
+        "original": {
+            "name": "$new-blue:",
+            "value": "blue;",
+            "full": "$new-blue: $blue;"
+        },
+        "name": "new-blue",
+        "type": "$",
+        "value": "blue"
+    },
+    "new_blue": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$new_blue: $blue;",
+        "original": {
+            "name": "$new_blue:",
+            "value": "blue;",
+            "full": "$new_blue: $blue;"
+        },
+        "name": "new_blue",
+        "type": "$",
+        "value": "blue"
+    },
+    "blue_75": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$blue_75: #4e8fe0;",
+        "original": {
+            "name": "$blue_75:",
+            "value": "4e8fe0;",
+            "full": "$blue_75:     #4e8fe0;"
+        },
+        "name": "blue_75",
+        "type": "#",
+        "value": "4e8fe0"
+    },
+    "blue_50": {
+        "aliases": [
+            "lightblue"
+        ],
+        "isAlias": false,
+        "full": "$blue_50: #7aabe8;",
+        "original": {
+            "name": "$blue_50:",
+            "value": "7aabe8;",
+            "full": "$blue_50:     #7aabe8;"
+        },
+        "name": "blue_50",
+        "type": "#",
+        "value": "7aabe8"
+    },
+    "lightblue": {
+        "aliases": [
+            "light-blue",
+            "light_blue"
+        ],
+        "isAlias": true,
+        "full": "$lightblue: $blue_50;",
+        "original": {
+            "name": "$lightblue:",
+            "value": "blue_50;",
+            "full": "$lightblue: $blue_50;"
+        },
+        "name": "lightblue",
+        "type": "$",
+        "value": "blue_50"
+    },
+    "light-blue": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$light-blue: $lightblue;",
+        "original": {
+            "name": "$light-blue:",
+            "value": "lightblue;",
+            "full": "$light-blue: $lightblue;"
+        },
+        "name": "light-blue",
+        "type": "$",
+        "value": "lightblue"
+    },
+    "light_blue": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$light_blue: $lightblue;",
+        "original": {
+            "name": "$light_blue:",
+            "value": "lightblue;",
+            "full": "$light_blue: $lightblue;"
+        },
+        "name": "light_blue",
+        "type": "$",
+        "value": "lightblue"
+    },
+    "blue_25": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$blue_25: #9bc0ee;",
+        "original": {
+            "name": "$blue_25:",
+            "value": "9bc0ee;",
+            "full": "$blue_25:     #9bc0ee;"
+        },
+        "name": "blue_25",
+        "type": "#",
+        "value": "9bc0ee"
+    },
+    "darkblue": {
+        "aliases": [
+            "dark-blue",
+            "dark_blue"
+        ],
+        "isAlias": false,
+        "full": "$darkblue: #0854cf;",
+        "original": {
+            "name": "$darkblue:",
+            "value": "0854cf;",
+            "full": "$darkblue:    #0854cf;"
+        },
+        "name": "darkblue",
+        "type": "#",
+        "value": "0854cf"
+    },
+    "dark-blue": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$dark-blue: $darkblue;",
+        "original": {
+            "name": "$dark-blue:",
+            "value": "darkblue;",
+            "full": "$dark-blue: $darkblue;"
+        },
+        "name": "dark-blue",
+        "type": "$",
+        "value": "darkblue"
+    },
+    "dark_blue": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$dark_blue: $darkblue;",
+        "original": {
+            "name": "$dark_blue:",
+            "value": "darkblue;",
+            "full": "$dark_blue: $darkblue;"
+        },
+        "name": "dark_blue",
+        "type": "$",
+        "value": "darkblue"
+    },
+    "shadowblue": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$shadowblue: #0e52a7;",
+        "original": {
+            "name": "$shadowblue:",
+            "value": "0e52a7;",
+            "full": "$shadowblue:  #0e52a7;"
+        },
+        "name": "shadowblue",
+        "type": "#",
+        "value": "0e52a7"
+    },
+    "blue_a90": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$blue_a90: rgba($blue, 0.9);",
+        "original": {
+            "name": "$blue_a90:",
+            "value": "($blue, 0.9);",
+            "full": "$blue_a90: rgba($blue, 0.9);"
+        },
+        "name": "blue_a90",
+        "type": "rgba",
+        "value": "($blue, 0.9)"
+    },
+    "blue_a50": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$blue_a50: rgba($blue, 0.5);",
+        "original": {
+            "name": "$blue_a50:",
+            "value": "($blue, 0.5);",
+            "full": "$blue_a50: rgba($blue, 0.5);"
+        },
+        "name": "blue_a50",
+        "type": "rgba",
+        "value": "($blue, 0.5)"
+    },
+    "blue_a20": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$blue_a20: rgba($blue, 0.2);",
+        "original": {
+            "name": "$blue_a20:",
+            "value": "($blue, 0.2);",
+            "full": "$blue_a20: rgba($blue, 0.2);"
+        },
+        "name": "blue_a20",
+        "type": "rgba",
+        "value": "($blue, 0.2)"
+    },
+    "blue_a10": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$blue_a10: rgba($blue, 0.1);",
+        "original": {
+            "name": "$blue_a10:",
+            "value": "($blue, 0.1);",
+            "full": "$blue_a10: rgba($blue, 0.1);"
+        },
+        "name": "blue_a10",
+        "type": "rgba",
+        "value": "($blue, 0.1)"
+    },
+    "bright_blue": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$bright_blue: #16a6f0;",
+        "original": {
+            "name": "$bright_blue:",
+            "value": "16a6f0;",
+            "full": "$bright_blue: #16a6f0;"
+        },
+        "name": "bright_blue",
+        "type": "#",
+        "value": "16a6f0"
+    },
+    "orange": {
+        "aliases": [
+            "neworange",
+            "new-orange",
+            "new_orange"
+        ],
+        "isAlias": false,
+        "full": "$orange: #fb8a2e;",
+        "original": {
+            "name": "$orange:",
+            "value": "fb8a2e;",
+            "full": "$orange:        #fb8a2e;"
+        },
+        "name": "orange",
+        "type": "#",
+        "value": "fb8a2e"
+    },
+    "neworange": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$neworange: $orange;",
+        "original": {
+            "name": "$neworange:",
+            "value": "orange;",
+            "full": "$neworange: $orange;"
+        },
+        "name": "neworange",
+        "type": "$",
+        "value": "orange"
+    },
+    "new-orange": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$new-orange: $orange;",
+        "original": {
+            "name": "$new-orange:",
+            "value": "orange;",
+            "full": "$new-orange: $orange;"
+        },
+        "name": "new-orange",
+        "type": "$",
+        "value": "orange"
+    },
+    "new_orange": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$new_orange: $orange;",
+        "original": {
+            "name": "$new_orange:",
+            "value": "orange;",
+            "full": "$new_orange: $orange;"
+        },
+        "name": "new_orange",
+        "type": "$",
+        "value": "orange"
+    },
+    "orange_75": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$orange_75: #ffa159;",
+        "original": {
+            "name": "$orange_75:",
+            "value": "ffa159;",
+            "full": "$orange_75:     #ffa159;"
+        },
+        "name": "orange_75",
+        "type": "#",
+        "value": "ffa159"
+    },
+    "orange_50": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$orange_50: #ffb983;",
+        "original": {
+            "name": "$orange_50:",
+            "value": "ffb983;",
+            "full": "$orange_50:     #ffb983;"
+        },
+        "name": "orange_50",
+        "type": "#",
+        "value": "ffb983"
+    },
+    "orange_25": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$orange_25: #ffcba2;",
+        "original": {
+            "name": "$orange_25:",
+            "value": "ffcba2;",
+            "full": "$orange_25:     #ffcba2;"
+        },
+        "name": "orange_25",
+        "type": "#",
+        "value": "ffcba2"
+    },
+    "darkorange": {
+        "aliases": [
+            "dark-orange",
+            "dark_orange"
+        ],
+        "isAlias": false,
+        "full": "$darkorange: #ff7e38;",
+        "original": {
+            "name": "$darkorange:",
+            "value": "ff7e38;",
+            "full": "$darkorange:    #ff7e38;"
+        },
+        "name": "darkorange",
+        "type": "#",
+        "value": "ff7e38"
+    },
+    "dark-orange": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$dark-orange: $darkorange;",
+        "original": {
+            "name": "$dark-orange:",
+            "value": "darkorange;",
+            "full": "$dark-orange: $darkorange;"
+        },
+        "name": "dark-orange",
+        "type": "$",
+        "value": "darkorange"
+    },
+    "dark_orange": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$dark_orange: $darkorange;",
+        "original": {
+            "name": "$dark_orange:",
+            "value": "darkorange;",
+            "full": "$dark_orange: $darkorange;"
+        },
+        "name": "dark_orange",
+        "type": "$",
+        "value": "darkorange"
+    },
+    "shadoworange": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$shadoworange: #b14206;",
+        "original": {
+            "name": "$shadoworange:",
+            "value": "b14206;",
+            "full": "$shadoworange:  #b14206;"
+        },
+        "name": "shadoworange",
+        "type": "#",
+        "value": "b14206"
+    },
+    "black_90": {
+        "aliases": [
+            "gray_90",
+            "grey_90"
+        ],
+        "isAlias": false,
+        "full": "$black_90: #4b4d51;",
+        "original": {
+            "name": "$black_90:",
+            "value": "4b4d51;",
+            "full": "$black_90: #4b4d51;"
+        },
+        "name": "black_90",
+        "type": "#",
+        "value": "4b4d51"
+    },
+    "black_80": {
+        "aliases": [
+            "gray_80",
+            "grey_80",
+            "reddit"
+        ],
+        "isAlias": false,
+        "full": "$black_80: #5f6165;",
+        "original": {
+            "name": "$black_80:",
+            "value": "5f6165;",
+            "full": "$black_80: #5f6165;"
+        },
+        "name": "black_80",
+        "type": "#",
+        "value": "5f6165"
+    },
+    "black_70": {
+        "aliases": [
+            "gray_70",
+            "grey_70",
+            "accent"
+        ],
+        "isAlias": false,
+        "full": "$black_70: #737578;",
+        "original": {
+            "name": "$black_70:",
+            "value": "737578;",
+            "full": "$black_70: #737578;"
+        },
+        "name": "black_70",
+        "type": "#",
+        "value": "737578"
+    },
+    "black_60": {
+        "aliases": [
+            "gray_60",
+            "grey_60"
+        ],
+        "isAlias": false,
+        "full": "$black_60: #87898b;",
+        "original": {
+            "name": "$black_60:",
+            "value": "87898b;",
+            "full": "$black_60: #87898b;"
+        },
+        "name": "black_60",
+        "type": "#",
+        "value": "87898b"
+    },
+    "black_50": {
+        "aliases": [
+            "gray_50",
+            "grey_50",
+            "hint"
+        ],
+        "isAlias": false,
+        "full": "$black_50: #9b9c9e;",
+        "original": {
+            "name": "$black_50:",
+            "value": "9b9c9e;",
+            "full": "$black_50: #9b9c9e;"
+        },
+        "name": "black_50",
+        "type": "#",
+        "value": "9b9c9e"
+    },
+    "black_40": {
+        "aliases": [
+            "gray_40",
+            "grey_40"
+        ],
+        "isAlias": false,
+        "full": "$black_40: #afb0b2;",
+        "original": {
+            "name": "$black_40:",
+            "value": "afb0b2;",
+            "full": "$black_40: #afb0b2;"
+        },
+        "name": "black_40",
+        "type": "#",
+        "value": "afb0b2"
+    },
+    "black_30": {
+        "aliases": [
+            "gray_30",
+            "grey_30",
+            "border_color"
+        ],
+        "isAlias": false,
+        "full": "$black_30: #c3c4c5;",
+        "original": {
+            "name": "$black_30:",
+            "value": "c3c4c5;",
+            "full": "$black_30: #c3c4c5;"
+        },
+        "name": "black_30",
+        "type": "#",
+        "value": "c3c4c5"
+    },
+    "black_20": {
+        "aliases": [
+            "gray_20",
+            "grey_20",
+            "border_color_light",
+            "rhr_border",
+            "right-module-border-color"
+        ],
+        "isAlias": false,
+        "full": "$black_20: #d7d8d8;",
+        "original": {
+            "name": "$black_20:",
+            "value": "d7d8d8;",
+            "full": "$black_20: #d7d8d8;"
+        },
+        "name": "black_20",
+        "type": "#",
+        "value": "d7d8d8"
+    },
+    "black_15": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$black_15: #e1e2e2;",
+        "original": {
+            "name": "$black_15:",
+            "value": "e1e2e2;",
+            "full": "$black_15: #e1e2e2;"
+        },
+        "name": "black_15",
+        "type": "#",
+        "value": "e1e2e2"
+    },
+    "black_10": {
+        "aliases": [
+            "gray_10",
+            "grey_10",
+            "bg-footer"
+        ],
+        "isAlias": false,
+        "full": "$black_10: #ebebeb;",
+        "original": {
+            "name": "$black_10:",
+            "value": "ebebeb;",
+            "full": "$black_10: #ebebeb;"
+        },
+        "name": "black_10",
+        "type": "#",
+        "value": "ebebeb"
+    },
+    "black_06": {
+        "aliases": [
+            "gray_06",
+            "grey_06",
+            "bg"
+        ],
+        "isAlias": false,
+        "full": "$black_06: #f3f3f4;",
+        "original": {
+            "name": "$black_06:",
+            "value": "f3f3f4;",
+            "full": "$black_06: #f3f3f4;"
+        },
+        "name": "black_06",
+        "type": "#",
+        "value": "f3f3f4"
+    },
+    "black_03": {
+        "aliases": [
+            "gray_03",
+            "grey_03"
+        ],
+        "isAlias": false,
+        "full": "$black_03: #f9f9f9;",
+        "original": {
+            "name": "$black_03:",
+            "value": "f9f9f9;",
+            "full": "$black_03: #f9f9f9;"
+        },
+        "name": "black_03",
+        "type": "#",
+        "value": "f9f9f9"
+    },
+    "gray_90": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$gray_90: $black_90;",
+        "original": {
+            "name": "$gray_90:",
+            "value": "black_90;",
+            "full": "$gray_90: $black_90;"
+        },
+        "name": "gray_90",
+        "type": "$",
+        "value": "black_90"
+    },
+    "grey_90": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$grey_90: $black_90;",
+        "original": {
+            "name": "$grey_90:",
+            "value": "black_90;",
+            "full": "$grey_90: $black_90;"
+        },
+        "name": "grey_90",
+        "type": "$",
+        "value": "black_90"
+    },
+    "gray_80": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$gray_80: $black_80;",
+        "original": {
+            "name": "$gray_80:",
+            "value": "black_80;",
+            "full": "$gray_80: $black_80;"
+        },
+        "name": "gray_80",
+        "type": "$",
+        "value": "black_80"
+    },
+    "grey_80": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$grey_80: $black_80;",
+        "original": {
+            "name": "$grey_80:",
+            "value": "black_80;",
+            "full": "$grey_80: $black_80;"
+        },
+        "name": "grey_80",
+        "type": "$",
+        "value": "black_80"
+    },
+    "gray_70": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$gray_70: $black_70;",
+        "original": {
+            "name": "$gray_70:",
+            "value": "black_70;",
+            "full": "$gray_70: $black_70;"
+        },
+        "name": "gray_70",
+        "type": "$",
+        "value": "black_70"
+    },
+    "grey_70": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$grey_70: $black_70;",
+        "original": {
+            "name": "$grey_70:",
+            "value": "black_70;",
+            "full": "$grey_70: $black_70;"
+        },
+        "name": "grey_70",
+        "type": "$",
+        "value": "black_70"
+    },
+    "gray_60": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$gray_60: $black_60;",
+        "original": {
+            "name": "$gray_60:",
+            "value": "black_60;",
+            "full": "$gray_60: $black_60;"
+        },
+        "name": "gray_60",
+        "type": "$",
+        "value": "black_60"
+    },
+    "grey_60": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$grey_60: $black_60;",
+        "original": {
+            "name": "$grey_60:",
+            "value": "black_60;",
+            "full": "$grey_60: $black_60;"
+        },
+        "name": "grey_60",
+        "type": "$",
+        "value": "black_60"
+    },
+    "gray_50": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$gray_50: $black_50;",
+        "original": {
+            "name": "$gray_50:",
+            "value": "black_50;",
+            "full": "$gray_50: $black_50;"
+        },
+        "name": "gray_50",
+        "type": "$",
+        "value": "black_50"
+    },
+    "grey_50": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$grey_50: $black_50;",
+        "original": {
+            "name": "$grey_50:",
+            "value": "black_50;",
+            "full": "$grey_50: $black_50;"
+        },
+        "name": "grey_50",
+        "type": "$",
+        "value": "black_50"
+    },
+    "gray_40": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$gray_40: $black_40;",
+        "original": {
+            "name": "$gray_40:",
+            "value": "black_40;",
+            "full": "$gray_40: $black_40;"
+        },
+        "name": "gray_40",
+        "type": "$",
+        "value": "black_40"
+    },
+    "grey_40": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$grey_40: $black_40;",
+        "original": {
+            "name": "$grey_40:",
+            "value": "black_40;",
+            "full": "$grey_40: $black_40;"
+        },
+        "name": "grey_40",
+        "type": "$",
+        "value": "black_40"
+    },
+    "gray_30": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$gray_30: $black_30;",
+        "original": {
+            "name": "$gray_30:",
+            "value": "black_30;",
+            "full": "$gray_30: $black_30;"
+        },
+        "name": "gray_30",
+        "type": "$",
+        "value": "black_30"
+    },
+    "grey_30": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$grey_30: $black_30;",
+        "original": {
+            "name": "$grey_30:",
+            "value": "black_30;",
+            "full": "$grey_30: $black_30;"
+        },
+        "name": "grey_30",
+        "type": "$",
+        "value": "black_30"
+    },
+    "gray_20": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$gray_20: $black_20;",
+        "original": {
+            "name": "$gray_20:",
+            "value": "black_20;",
+            "full": "$gray_20: $black_20;"
+        },
+        "name": "gray_20",
+        "type": "$",
+        "value": "black_20"
+    },
+    "grey_20": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$grey_20: $black_20;",
+        "original": {
+            "name": "$grey_20:",
+            "value": "black_20;",
+            "full": "$grey_20: $black_20;"
+        },
+        "name": "grey_20",
+        "type": "$",
+        "value": "black_20"
+    },
+    "gray_10": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$gray_10: $black_10;",
+        "original": {
+            "name": "$gray_10:",
+            "value": "black_10;",
+            "full": "$gray_10: $black_10;"
+        },
+        "name": "gray_10",
+        "type": "$",
+        "value": "black_10"
+    },
+    "grey_10": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$grey_10: $black_10;",
+        "original": {
+            "name": "$grey_10:",
+            "value": "black_10;",
+            "full": "$grey_10: $black_10;"
+        },
+        "name": "grey_10",
+        "type": "$",
+        "value": "black_10"
+    },
+    "gray_06": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$gray_06: $black_06;",
+        "original": {
+            "name": "$gray_06:",
+            "value": "black_06;",
+            "full": "$gray_06: $black_06;"
+        },
+        "name": "gray_06",
+        "type": "$",
+        "value": "black_06"
+    },
+    "grey_06": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$grey_06: $black_06;",
+        "original": {
+            "name": "$grey_06:",
+            "value": "black_06;",
+            "full": "$grey_06: $black_06;"
+        },
+        "name": "grey_06",
+        "type": "$",
+        "value": "black_06"
+    },
+    "gray_03": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$gray_03: $black_03;",
+        "original": {
+            "name": "$gray_03:",
+            "value": "black_03;",
+            "full": "$gray_03: $black_03;"
+        },
+        "name": "gray_03",
+        "type": "$",
+        "value": "black_03"
+    },
+    "grey_03": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$grey_03: $black_03;",
+        "original": {
+            "name": "$grey_03:",
+            "value": "black_03;",
+            "full": "$grey_03: $black_03;"
+        },
+        "name": "grey_03",
+        "type": "$",
+        "value": "black_03"
+    },
+    "accent": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$accent: $black_70;",
+        "original": {
+            "name": "$accent:",
+            "value": "black_70;",
+            "full": "$accent:                  $black_70;"
+        },
+        "name": "accent",
+        "type": "$",
+        "value": "black_70"
+    },
+    "bg-footer": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$bg-footer: $black_10;",
+        "original": {
+            "name": "$bg-footer:",
+            "value": "black_10;",
+            "full": "$bg-footer:               $black_10;"
+        },
+        "name": "bg-footer",
+        "type": "$",
+        "value": "black_10"
+    },
+    "bg": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$bg: $black_06;",
+        "original": {
+            "name": "$bg:",
+            "value": "black_06;",
+            "full": "$bg:                      $black_06;"
+        },
+        "name": "bg",
+        "type": "$",
+        "value": "black_06"
+    },
+    "border_color": {
+        "aliases": [
+            "border-color"
+        ],
+        "isAlias": true,
+        "full": "$border_color: $black_30;",
+        "original": {
+            "name": "$border_color:",
+            "value": "black_30;",
+            "full": "$border_color:            $black_30;"
+        },
+        "name": "border_color",
+        "type": "$",
+        "value": "black_30"
+    },
+    "border-color": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$border-color: $border_color;",
+        "original": {
+            "name": "$border-color:",
+            "value": "border_color;",
+            "full": "$border-color:    $border_color;"
+        },
+        "name": "border-color",
+        "type": "$",
+        "value": "border_color"
+    },
+    "border_color_light": {
+        "aliases": [
+            "border-color-light"
+        ],
+        "isAlias": true,
+        "full": "$border_color_light: $black_20;",
+        "original": {
+            "name": "$border_color_light:",
+            "value": "black_20;",
+            "full": "$border_color_light:      $black_20;"
+        },
+        "name": "border_color_light",
+        "type": "$",
+        "value": "black_20"
+    },
+    "border-color-light": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$border-color-light: $border_color_light;",
+        "original": {
+            "name": "$border-color-light:",
+            "value": "border_color_light;",
+            "full": "$border-color-light:    $border_color_light;"
+        },
+        "name": "border-color-light",
+        "type": "$",
+        "value": "border_color_light"
+    },
+    "font-color": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$font-color: $black;",
+        "original": {
+            "name": "$font-color:",
+            "value": "black;",
+            "full": "$font-color:              $black;"
+        },
+        "name": "font-color",
+        "type": "$",
+        "value": "black"
+    },
+    "hint": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$hint: $black_50;",
+        "original": {
+            "name": "$hint:",
+            "value": "black_50;",
+            "full": "$hint:                    $black_50;"
+        },
+        "name": "hint",
+        "type": "$",
+        "value": "black_50"
+    },
+    "rhr_border": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$rhr_border: $black_20;",
+        "original": {
+            "name": "$rhr_border:",
+            "value": "black_20;",
+            "full": "$rhr_border:              $black_20;"
+        },
+        "name": "rhr_border",
+        "type": "$",
+        "value": "black_20"
+    },
+    "right-module-border-color": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$right-module-border-color: $black_20;",
+        "original": {
+            "name": "$right-module-border-color:",
+            "value": "black_20;",
+            "full": "$right-module-border-color:    $black_20;"
+        },
+        "name": "right-module-border-color",
+        "type": "$",
+        "value": "black_20"
+    },
+    "red": {
+        "aliases": [
+            "error",
+            "subject_food"
+        ],
+        "isAlias": false,
+        "full": "$red: #f44848;",
+        "original": {
+            "name": "$red:",
+            "value": "f44848;",
+            "full": "$red:     #f44848;"
+        },
+        "name": "red",
+        "type": "#",
+        "value": "f44848"
+    },
+    "error": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$error: $red;",
+        "original": {
+            "name": "$error:",
+            "value": "red;",
+            "full": "$error: $red;"
+        },
+        "name": "error",
+        "type": "$",
+        "value": "red"
+    },
+    "red_75": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$red_75: #f77676;",
+        "original": {
+            "name": "$red_75:",
+            "value": "f77676;",
+            "full": "$red_75:  #f77676;"
+        },
+        "name": "red_75",
+        "type": "#",
+        "value": "f77676"
+    },
+    "red_50": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$red_50: #f99898;",
+        "original": {
+            "name": "$red_50:",
+            "value": "f99898;",
+            "full": "$red_50:  #f99898;"
+        },
+        "name": "red_50",
+        "type": "#",
+        "value": "f99898"
+    },
+    "red_25": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$red_25: #fbb2b2;",
+        "original": {
+            "name": "$red_25:",
+            "value": "fbb2b2;",
+            "full": "$red_25:  #fbb2b2;"
+        },
+        "name": "red_25",
+        "type": "#",
+        "value": "fbb2b2"
+    },
+    "red_05": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$red_05: #fcf7f7;",
+        "original": {
+            "name": "$red_05:",
+            "value": "fcf7f7;",
+            "full": "$red_05:  #fcf7f7;"
+        },
+        "name": "red_05",
+        "type": "#",
+        "value": "fcf7f7"
+    },
+    "pink": {
+        "aliases": [
+            "subject_celebs"
+        ],
+        "isAlias": false,
+        "full": "$pink: #f14986;",
+        "original": {
+            "name": "$pink:",
+            "value": "f14986;",
+            "full": "$pink:     #f14986;"
+        },
+        "name": "pink",
+        "type": "#",
+        "value": "f14986"
+    },
+    "pink_75": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$pink_75: #f577a4;",
+        "original": {
+            "name": "$pink_75:",
+            "value": "f577a4;",
+            "full": "$pink_75:  #f577a4;"
+        },
+        "name": "pink_75",
+        "type": "#",
+        "value": "f577a4"
+    },
+    "pink_50": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$pink_50: #f899bb;",
+        "original": {
+            "name": "$pink_50:",
+            "value": "f899bb;",
+            "full": "$pink_50:  #f899bb;"
+        },
+        "name": "pink_50",
+        "type": "#",
+        "value": "f899bb"
+    },
+    "pink_25": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$pink_25: #fab3cc;",
+        "original": {
+            "name": "$pink_25:",
+            "value": "fab3cc;",
+            "full": "$pink_25:  #fab3cc;"
+        },
+        "name": "pink_25",
+        "type": "#",
+        "value": "fab3cc"
+    },
+    "purple": {
+        "aliases": [
+            "subject_politics"
+        ],
+        "isAlias": false,
+        "full": "$purple: #5352ba;",
+        "original": {
+            "name": "$purple:",
+            "value": "5352ba;",
+            "full": "$purple:     #5352ba;"
+        },
+        "name": "purple",
+        "type": "#",
+        "value": "5352ba"
+    },
+    "purple_75": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$purple_75: #7e7dcb;",
+        "original": {
+            "name": "$purple_75:",
+            "value": "7e7dcb;",
+            "full": "$purple_75:  #7e7dcb;"
+        },
+        "name": "purple_75",
+        "type": "#",
+        "value": "7e7dcb"
+    },
+    "purple_50": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$purple_50: #9e9ed8;",
+        "original": {
+            "name": "$purple_50:",
+            "value": "9e9ed8;",
+            "full": "$purple_50:  #9e9ed8;"
+        },
+        "name": "purple_50",
+        "type": "#",
+        "value": "9e9ed8"
+    },
+    "purple_25": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$purple_25: #b6b6e2;",
+        "original": {
+            "name": "$purple_25:",
+            "value": "b6b6e2;",
+            "full": "$purple_25:  #b6b6e2;"
+        },
+        "name": "purple_25",
+        "type": "#",
+        "value": "b6b6e2"
+    },
+    "green": {
+        "aliases": [
+            "subject_money"
+        ],
+        "isAlias": false,
+        "full": "$green: #33b436;",
+        "original": {
+            "name": "$green:",
+            "value": "33b436;",
+            "full": "$green:     #33b436;"
+        },
+        "name": "green",
+        "type": "#",
+        "value": "33b436"
+    },
+    "green_75": {
+        "aliases": [
+            "subject_tech"
+        ],
+        "isAlias": false,
+        "full": "$green_75: #66c768;",
+        "original": {
+            "name": "$green_75:",
+            "value": "66c768;",
+            "full": "$green_75:  #66c768;"
+        },
+        "name": "green_75",
+        "type": "#",
+        "value": "66c768"
+    },
+    "green_50": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$green_50: #8cd58e;",
+        "original": {
+            "name": "$green_50:",
+            "value": "8cd58e;",
+            "full": "$green_50:  #8cd58e;"
+        },
+        "name": "green_50",
+        "type": "#",
+        "value": "8cd58e"
+    },
+    "green_25": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$green_25: #a9e0aa;",
+        "original": {
+            "name": "$green_25:",
+            "value": "a9e0aa;",
+            "full": "$green_25:  #a9e0aa;"
+        },
+        "name": "green_25",
+        "type": "#",
+        "value": "a9e0aa"
+    },
+    "aqua": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$aqua: #16a6f0;",
+        "original": {
+            "name": "$aqua:",
+            "value": "16a6f0;",
+            "full": "$aqua:     #16a6f0;"
+        },
+        "name": "aqua",
+        "type": "#",
+        "value": "16a6f0"
+    },
+    "aqua_75": {
+        "aliases": [
+            "subject_health"
+        ],
+        "isAlias": false,
+        "full": "$aqua_75: #50bcf4;",
+        "original": {
+            "name": "$aqua_75:",
+            "value": "50bcf4;",
+            "full": "$aqua_75:  #50bcf4;"
+        },
+        "name": "aqua_75",
+        "type": "#",
+        "value": "50bcf4"
+    },
+    "aqua_50": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$aqua_50: #7ccdf7;",
+        "original": {
+            "name": "$aqua_50:",
+            "value": "7ccdf7;",
+            "full": "$aqua_50:  #7ccdf7;"
+        },
+        "name": "aqua_50",
+        "type": "#",
+        "value": "7ccdf7"
+    },
+    "aqua_25": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$aqua_25: #9ddaf9;",
+        "original": {
+            "name": "$aqua_25:",
+            "value": "9ddaf9;",
+            "full": "$aqua_25:  #9ddaf9;"
+        },
+        "name": "aqua_25",
+        "type": "#",
+        "value": "9ddaf9"
+    },
+    "yellow": {
+        "aliases": [
+            "subject_lifestyle"
+        ],
+        "isAlias": false,
+        "full": "$yellow: #fdd80d;",
+        "original": {
+            "name": "$yellow:",
+            "value": "fdd80d;",
+            "full": "$yellow:     #fdd80d;"
+        },
+        "name": "yellow",
+        "type": "#",
+        "value": "fdd80d"
+    },
+    "yellow_75": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$yellow_75: #fee24a;",
+        "original": {
+            "name": "$yellow_75:",
+            "value": "fee24a;",
+            "full": "$yellow_75:  #fee24a;"
+        },
+        "name": "yellow_75",
+        "type": "#",
+        "value": "fee24a"
+    },
+    "yellow_50": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$yellow_50: #fee977;",
+        "original": {
+            "name": "$yellow_50:",
+            "value": "fee977;",
+            "full": "$yellow_50:  #fee977;"
+        },
+        "name": "yellow_50",
+        "type": "#",
+        "value": "fee977"
+    },
+    "yellow_25": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$yellow_25: #feef99;",
+        "original": {
+            "name": "$yellow_25:",
+            "value": "feef99;",
+            "full": "$yellow_25:  #feef99;"
+        },
+        "name": "yellow_25",
+        "type": "#",
+        "value": "feef99"
+    },
+    "subject_celebs": {
+        "aliases": [
+            "celebs"
+        ],
+        "isAlias": true,
+        "full": "$subject_celebs: $pink;",
+        "original": {
+            "name": "$subject_celebs:",
+            "value": "pink;",
+            "full": "$subject_celebs: $pink;"
+        },
+        "name": "subject_celebs",
+        "type": "$",
+        "value": "pink"
+    },
+    "celebs": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$celebs: $subject_celebs;",
+        "original": {
+            "name": "$celebs:",
+            "value": "subject_celebs;",
+            "full": "$celebs: $subject_celebs;"
+        },
+        "name": "celebs",
+        "type": "$",
+        "value": "subject_celebs"
+    },
+    "subject_food": {
+        "aliases": [
+            "food"
+        ],
+        "isAlias": true,
+        "full": "$subject_food: $red;",
+        "original": {
+            "name": "$subject_food:",
+            "value": "red;",
+            "full": "$subject_food: $red;"
+        },
+        "name": "subject_food",
+        "type": "$",
+        "value": "red"
+    },
+    "food": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$food: $subject_food;",
+        "original": {
+            "name": "$food:",
+            "value": "subject_food;",
+            "full": "$food: $subject_food;"
+        },
+        "name": "food",
+        "type": "$",
+        "value": "subject_food"
+    },
+    "subject_health": {
+        "aliases": [
+            "health"
+        ],
+        "isAlias": true,
+        "full": "$subject_health: $aqua_75;",
+        "original": {
+            "name": "$subject_health:",
+            "value": "aqua_75;",
+            "full": "$subject_health: $aqua_75;"
+        },
+        "name": "subject_health",
+        "type": "$",
+        "value": "aqua_75"
+    },
+    "health": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$health: $subject_health;",
+        "original": {
+            "name": "$health:",
+            "value": "subject_health;",
+            "full": "$health: $subject_health;"
+        },
+        "name": "health",
+        "type": "$",
+        "value": "subject_health"
+    },
+    "subject_lifestyle": {
+        "aliases": [
+            "lifestyle"
+        ],
+        "isAlias": true,
+        "full": "$subject_lifestyle: $yellow;",
+        "original": {
+            "name": "$subject_lifestyle:",
+            "value": "yellow;",
+            "full": "$subject_lifestyle: $yellow;"
+        },
+        "name": "subject_lifestyle",
+        "type": "$",
+        "value": "yellow"
+    },
+    "lifestyle": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$lifestyle: $subject_lifestyle;",
+        "original": {
+            "name": "$lifestyle:",
+            "value": "subject_lifestyle;",
+            "full": "$lifestyle: $subject_lifestyle;"
+        },
+        "name": "lifestyle",
+        "type": "$",
+        "value": "subject_lifestyle"
+    },
+    "subject_money": {
+        "aliases": [
+            "money"
+        ],
+        "isAlias": true,
+        "full": "$subject_money: $green;",
+        "original": {
+            "name": "$subject_money:",
+            "value": "green;",
+            "full": "$subject_money: $green;"
+        },
+        "name": "subject_money",
+        "type": "$",
+        "value": "green"
+    },
+    "money": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$money: $subject_money;",
+        "original": {
+            "name": "$money:",
+            "value": "subject_money;",
+            "full": "$money: $subject_money;"
+        },
+        "name": "money",
+        "type": "$",
+        "value": "subject_money"
+    },
+    "subject_politics": {
+        "aliases": [
+            "politics"
+        ],
+        "isAlias": true,
+        "full": "$subject_politics: $purple;",
+        "original": {
+            "name": "$subject_politics:",
+            "value": "purple;",
+            "full": "$subject_politics: $purple;"
+        },
+        "name": "subject_politics",
+        "type": "$",
+        "value": "purple"
+    },
+    "politics": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$politics: $subject_politics;",
+        "original": {
+            "name": "$politics:",
+            "value": "subject_politics;",
+            "full": "$politics: $subject_politics;"
+        },
+        "name": "politics",
+        "type": "$",
+        "value": "subject_politics"
+    },
+    "subject_sports": {
+        "aliases": [
+            "sports"
+        ],
+        "isAlias": false,
+        "full": "$subject_sports: #7d7d7d;",
+        "original": {
+            "name": "$subject_sports:",
+            "value": "7d7d7d;",
+            "full": "$subject_sports: #7d7d7d;"
+        },
+        "name": "subject_sports",
+        "type": "#",
+        "value": "7d7d7d"
+    },
+    "sports": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$sports: $subject_sports;",
+        "original": {
+            "name": "$sports:",
+            "value": "subject_sports;",
+            "full": "$sports: $subject_sports;"
+        },
+        "name": "sports",
+        "type": "$",
+        "value": "subject_sports"
+    },
+    "subject_tech": {
+        "aliases": [
+            "tech"
+        ],
+        "isAlias": true,
+        "full": "$subject_tech: $green_75;",
+        "original": {
+            "name": "$subject_tech:",
+            "value": "green_75;",
+            "full": "$subject_tech: $green_75;"
+        },
+        "name": "subject_tech",
+        "type": "$",
+        "value": "green_75"
+    },
+    "tech": {
+        "aliases": [
+            "technology"
+        ],
+        "isAlias": true,
+        "full": "$tech: $subject_tech;",
+        "original": {
+            "name": "$tech:",
+            "value": "subject_tech;",
+            "full": "$tech: $subject_tech;"
+        },
+        "name": "tech",
+        "type": "$",
+        "value": "subject_tech"
+    },
+    "technology": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$technology: $tech;",
+        "original": {
+            "name": "$technology:",
+            "value": "tech;",
+            "full": "$technology: $tech;"
+        },
+        "name": "technology",
+        "type": "$",
+        "value": "tech"
+    },
+    "lightyellow": {
+        "aliases": [
+            "light-yellow",
+            "light_yellow"
+        ],
+        "isAlias": false,
+        "full": "$lightyellow: #feef99;",
+        "original": {
+            "name": "$lightyellow:",
+            "value": "feef99;",
+            "full": "$lightyellow:  #feef99;"
+        },
+        "name": "lightyellow",
+        "type": "#",
+        "value": "feef99"
+    },
+    "light-yellow": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$light-yellow: $lightyellow;",
+        "original": {
+            "name": "$light-yellow:",
+            "value": "lightyellow;",
+            "full": "$light-yellow: $lightyellow;"
+        },
+        "name": "light-yellow",
+        "type": "$",
+        "value": "lightyellow"
+    },
+    "light_yellow": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$light_yellow: $lightyellow;",
+        "original": {
+            "name": "$light_yellow:",
+            "value": "lightyellow;",
+            "full": "$light_yellow: $lightyellow;"
+        },
+        "name": "light_yellow",
+        "type": "$",
+        "value": "lightyellow"
+    },
+    "darkyellow": {
+        "aliases": [
+            "dark-yellow",
+            "dark_yellow"
+        ],
+        "isAlias": false,
+        "full": "$darkyellow: #bc9c08;",
+        "original": {
+            "name": "$darkyellow:",
+            "value": "bc9c08;",
+            "full": "$darkyellow:   #bc9c08;"
+        },
+        "name": "darkyellow",
+        "type": "#",
+        "value": "bc9c08"
+    },
+    "dark-yellow": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$dark-yellow: $darkyellow;",
+        "original": {
+            "name": "$dark-yellow:",
+            "value": "darkyellow;",
+            "full": "$dark-yellow: $darkyellow;"
+        },
+        "name": "dark-yellow",
+        "type": "$",
+        "value": "darkyellow"
+    },
+    "dark_yellow": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$dark_yellow: $darkyellow;",
+        "original": {
+            "name": "$dark_yellow:",
+            "value": "darkyellow;",
+            "full": "$dark_yellow: $darkyellow;"
+        },
+        "name": "dark_yellow",
+        "type": "$",
+        "value": "darkyellow"
+    },
+    "facebook": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$facebook: #3b5998;",
+        "original": {
+            "name": "$facebook:",
+            "value": "3b5998;",
+            "full": "$facebook:       #3b5998;"
+        },
+        "name": "facebook",
+        "type": "#",
+        "value": "3b5998"
+    },
+    "google": {
+        "aliases": [
+            "googleplus",
+            "google-plus",
+            "google_plus"
+        ],
+        "isAlias": false,
+        "full": "$google: #dd4b39;",
+        "original": {
+            "name": "$google:",
+            "value": "dd4b39;",
+            "full": "$google:         #dd4b39;"
+        },
+        "name": "google",
+        "type": "#",
+        "value": "dd4b39"
+    },
+    "googleplus": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$googleplus: $google;",
+        "original": {
+            "name": "$googleplus:",
+            "value": "google;",
+            "full": "$googleplus: $google;"
+        },
+        "name": "googleplus",
+        "type": "$",
+        "value": "google"
+    },
+    "google-plus": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$google-plus: $google;",
+        "original": {
+            "name": "$google-plus:",
+            "value": "google;",
+            "full": "$google-plus: $google;"
+        },
+        "name": "google-plus",
+        "type": "$",
+        "value": "google"
+    },
+    "google_plus": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$google_plus: $google;",
+        "original": {
+            "name": "$google_plus:",
+            "value": "google;",
+            "full": "$google_plus: $google;"
+        },
+        "name": "google_plus",
+        "type": "$",
+        "value": "google"
+    },
+    "linkedin": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$linkedin: #0e76ab;",
+        "original": {
+            "name": "$linkedin:",
+            "value": "0e76ab;",
+            "full": "$linkedin:       #0e76ab;"
+        },
+        "name": "linkedin",
+        "type": "#",
+        "value": "0e76ab"
+    },
+    "pinterest": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$pinterest: #c92228;",
+        "original": {
+            "name": "$pinterest:",
+            "value": "c92228;",
+            "full": "$pinterest:      #c92228;"
+        },
+        "name": "pinterest",
+        "type": "#",
+        "value": "c92228"
+    },
+    "reddit": {
+        "aliases": false,
+        "isAlias": true,
+        "full": "$reddit: $black_80;",
+        "original": {
+            "name": "$reddit:",
+            "value": "black_80;",
+            "full": "$reddit:         $black_80;"
+        },
+        "name": "reddit",
+        "type": "$",
+        "value": "black_80"
+    },
+    "stumbleupon": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$stumbleupon: #f74425;",
+        "original": {
+            "name": "$stumbleupon:",
+            "value": "f74425;",
+            "full": "$stumbleupon:    #f74425;"
+        },
+        "name": "stumbleupon",
+        "type": "#",
+        "value": "f74425"
+    },
+    "tumblr": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$tumblr: #34526f;",
+        "original": {
+            "name": "$tumblr:",
+            "value": "34526f;",
+            "full": "$tumblr:         #34526f;"
+        },
+        "name": "tumblr",
+        "type": "#",
+        "value": "34526f"
+    },
+    "twitter": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$twitter: #00acee;",
+        "original": {
+            "name": "$twitter:",
+            "value": "00acee;",
+            "full": "$twitter:        #00acee;"
+        },
+        "name": "twitter",
+        "type": "#",
+        "value": "00acee"
+    },
+    "youtube": {
+        "aliases": false,
+        "isAlias": false,
+        "full": "$youtube: #b31217;",
+        "original": {
+            "name": "$youtube:",
+            "value": "b31217;",
+            "full": "$youtube:        #b31217;"
+        },
+        "name": "youtube",
+        "type": "#",
+        "value": "b31217"
+    }
+}

@@ -1,0 +1,35 @@
+$base_palette: (
+	black: #333,
+	grey: #efefef,
+	pink: #F0405A,
+);
+
+$palettes: (
+	black: (
+		100: 	base(black),
+		75: 	lighten( base(black), 75% ),
+		50: 	lighten( base(black), 50% ),
+		25: 	lighten( base(black), 25% ),
+	),
+	grey: (
+		150: 	darken( base(grey), 50),
+		125: 	darken( base(grey), 25),
+		110: 	darken( base(grey), 10),
+		105: 	darken( base(grey), 5),
+		100: 	base(grey),
+		95: 	lighten( base(grey), 95% ),
+		75: 	lighten( base(grey), 75% ),
+		50: 	lighten( base(grey), 50% ),
+		25: 	lighten( base(grey), 25% ),
+		5: 		lighten( base(grey), 5% ),
+	),
+	pink: (
+		110: 	darken( base(pink), 10% ),
+		105: 	darken( base(pink), 5% ),
+		100: 	base(pink),
+		30: 	lighten( base(pink), 30% ),
+		35: 	lighten( base(pink), 35% ),
+		25: 	lighten( base(pink), 25% ),
+		5: 		lighten( base(pink), 5% ),
+	),
+);

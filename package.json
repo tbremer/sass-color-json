@@ -1,0 +1,40 @@
+{
+  "name": "sass-color-json",
+  "version": "0.1.0",
+  "description": "Generate json based on SASS color variables.",
+  "author": "Thomas Bremer",
+  "contributors": [],
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "jshint **/*.js",
+    "test": "mocha **/test.js"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "sass-color-json": "bin/sass-color-json"
+  },
+  "keywords": [
+    "sass",
+    "scss",
+    "css",
+    "colors"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tbremer/sass-colors-json"
+  },
+  "bugs": {
+    "url": "https://github.com/tbremer/sass-colors-json/issues"
+  },
+  "devDependencies": {
+    "jshint": "^2.5.11",
+    "mocha": "^2.1.0"
+  },
+  "dependencies": {
+    "fs-extra": "^0.14.0",
+    "nopt": "^3.0.1",
+    "strip-comments": "^0.3.2",
+    "underscore": "^1.7.0"
+  }
+}
