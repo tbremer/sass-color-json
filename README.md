@@ -12,14 +12,22 @@ Module can be used as  CLI or within your node project.
 
 ###Options (as json object {})
 **input**
+
 Required: `True`
+
 Type: `String`
+
 Default: `" "`
 
+
 **output**
+
 Required: `False`
+
 Type: `String`
+
 Default: `False`
+
 When not supplied: `Returns JSON object`
 
 ###Example
