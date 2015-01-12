@@ -213,9 +213,6 @@
 
 					app.async(options, function (err, data) {
 						fs.stat(options.output, function (err, stats) {
-							if (err) {
-								console.log('It\'s not there...');
-							}
 
 							actual = stats.isFile(options.output + 'sass-variables.json');
 							expected = true;
@@ -236,10 +233,9 @@
 							console.log(err);
 						}
 
+						console.log('file... ' + data);
+
 						fs.stat(options.output, function (err, stats) {
-							if (err) {
-								console.log('It\'s not there...');
-							}
 
 							actual = stats.isFile(options.output);
 							expected = true;
@@ -250,11 +246,6 @@
 				});
 			});
 		});
-
-		after('Cleaning up code...', function () {
-			fs.removeSync('tmp/');
-			fs.removeSync('asyncTmp/');
-			fs.removeSync('./sass-variables.json');
-		});
 	});
+
 })();
