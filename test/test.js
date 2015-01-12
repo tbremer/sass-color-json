@@ -1,251 +1,153 @@
-(function () {
-	'use strict';
-	var assert		=	require('assert'),
-		fs			=	require('fs-extra'),
-		app			=	require('../'),
-		validJSON	=	require('./sass-variables.json'),
-		options,
-		actual,
-		expected;
+var should		=	require('should'),
+	fs			=	require('fs-extra'),
+	app			=	require('../'),
+	validJSON	=	require('./sass-variables.json'),
+	options,
+	actual,
+	expected;
 
-	describe('sass-color-json', function () {
-		describe('sync', function () {
-			describe('failing: ', function () {
-				it('fails when no file is sent', function () {
-					actual = app.sync({});
-					expected = false;
 
-					assert.strictEqual(actual, expected);
-				});
-
-				it('fails when input file doesn\'t exist', function () {
-					options = {
-						input: 'test/foo'
-					};
-
-					actual = app.sync(options);
-					expected = false;
-
-					assert.strictEqual(actual, expected);
-
-				});
-
-				it('fails when you pass a directory as the input', function () {
-					options = {
-						input: 'test/'
-					};
-
-					actual = app.sync(options);
-					expected = false;
-
-					assert.strictEqual(actual, expected);
-				});
-			});
-
-			describe('passing:', function () {
-				it('returns json when there is no output', function () {
-					options = {
-						input: 'test/colors.scss'
-					};
-
-					actual = app.sync(options);
-					expected = validJSON;
-
-					assert.deepEqual(actual, expected);
-				});
-
-				it('creates a file in your cwd if you don\'t pass a directory', function () {
-					options = {
-						input: 'test/colors.scss',
-						output: 'sass-variables.json'
-					};
-
-					app.sync(options);
-
-					actual = fs.existsSync('sass-variables.json');
-					expected = true;
-
-					assert.strictEqual(actual, expected);
-				});
-
-				it('creates a valid json file from last test...', function () {
-					options = {
-						input: 'test/colors.scss',
-						output: 'sass-variables.json'
-					};
-
-					app.sync(options);
-
-					actual = fs.readJsonSync('sass-variables.json');
-					expected = validJSON;
-
-					assert.deepEqual(actual, expected);
-				});
-
-				it ('creates a file in your specified path', function () {
-					options = {
-						input: 'test/colors.scss',
-						output: 'tmp/'
-					};
-
-					app.sync(options);
-
-					actual = fs.existsSync('tmp/sass-variables.json');
-					expected = true;
-
-					assert.strictEqual(actual, expected);
-				});
-
-				it('creates a file with your specified file name', function () {
-					options = {
-						input: 'test/colors.scss',
-						output: 'tmp/test.json'
-					};
-
-					app.sync(options);
-
-					actual = fs.existsSync(options.output);
-					expected = true;
-
-					assert.strictEqual(actual, expected);
-				});
-			});
+describe('sass-color-json', function () {
+	describe('sync', function () {
+		it('should return false with no input', function () {
+			should.deepEqual(app.sync({}), false);
 		});
 
-		describe('async', function () {
-			describe('failing', function () {
-				it('returns false if no callback is passed', function () {
-					actual = app.async({});
-					expected = false;
+		it('should return false when input is not a file', function () {
+			should.deepEqual(app.sync({input: 'test/foo.scss'}), false);
+		});
 
-					assert.strictEqual(actual, expected);
-				});
+		it('should return false when input is a directory', function () {
+			should.deepEqual(app.sync({input: 'test/'}), false);
+		});
 
-				it('throws an error when no file is passed', function () {
-					app.async({}, function (err, data) {
-						expected = true;
+		it('should return an obj when no ouput is sent', function () {
+			should.deepEqual(app.sync({input: 'test/colors.scss'}), validJSON);
+		});
 
-						if (err) {
-							actual = true;
-						} else {
-							actual = false;
-						}
+		it('should create file in CWD if no output directory is sent', function () {
+			options = {
+				input: 'test/colors.scss',
+				output: 'cwdSync.json'
+			};
 
-						assert.strictEqual(actual, expected);
-					});
-				});
+			app.sync(options);
 
-				it('throws an error when the file doesn\'t exist', function () {
-					options = {
-						input: 'test/foo.scss'
-					};
+			should.exist(options.output);
+			should.deepEqual(fs.readJsonSync(options.output), validJSON);
+		});
 
-					app.async(options, function (err, data) {
-						expected = true;
+		it('creates file in directory you send', function () {
+			options = {
+				input: 'test/colors.scss',
+				output: 'tmp/sync/'
+			};
+			app.sync(options);
 
-						if (err) {
-							actual = true;
-						} else {
-							actual = false;
-						}
+			should.exist('./tmp/sync/sass-variables.json');
+			should.deepEqual(fs.readJsonSync('./tmp/sync/sass-variables.json'), validJSON);
+		});
 
-						assert.deepEqual(actual, expected);
-					});
-				});
+		it('creates file in directory of the name you send', function () {
+			options = {
+				input: 'test/colors.scss',
+				output: 'tmp/sync/test.json'
+			};
+			app.sync(options);
 
-				it('throws an error if the input file is actually a directory', function () {
-					app.async({input: 'test/'}, function (err, data) {
-						expected = true;
-						actual = (err) ? true : false;
-
-						assert.strictEqual(actual, expected);
-					});
-				});
-			});
-
-			describe('passing', function () {
-				it('returns a JSON object when no output is passed', function () {
-					app.async({input: 'test/colors.scss'}, function (err, data) {
-						actual = validJSON;
-						expected = data;
-
-						assert.deepEqual(actual, expected);
-					});
-				});
-
-				it('creates a file in your cwd if you don\'t pass a directory', function () {
-					options = {
-						input: 'test/colors.scss',
-						output: 'sass-variables.json'
-					};
-
-					app.async(options, function (err, data) {
-						fs.exists(options.output, function (exists) {
-							actual = exists;
-							expected = true;
-
-							assert.strictEqual(actual, expected);
-						});
-					});
-				});
-
-				it('creates a valid json file from last test...', function () {
-					options = {
-						input: 'test/colors.scss',
-						output: 'sass-variables.json'
-					};
-
-					app.async(options, function (err, data) {
-						fs.readJson('sass-variables.json', function (err, data) {
-							actual = data;
-							expected = validJSON;
-
-							assert.deepEqual(actual, expected);
-						});
-					});
-				});
-
-				it ('creates a file in your specified path', function () {
-					options = {
-						input: 'test/colors.scss',
-						output: 'asyncTmp/'
-					};
-
-					app.async(options, function (err, data) {
-						fs.stat(options.output, function (err, stats) {
-
-							actual = stats.isFile(options.output + 'sass-variables.json');
-							expected = true;
-
-							assert.strictEqual(actual, expected);
-						});
-					});
-				});
-
-				it('creates a file with your specified path & file name', function () {
-					options = {
-						input: 'test/colors.scss',
-						output: 'asyncTmp/test.json'
-					};
-
-					app.async(options, function (err, data) {
-						if (err) {
-							console.log(err);
-						}
-
-						console.log('file... ' + data);
-
-						fs.stat(options.output, function (err, stats) {
-
-							actual = stats.isFile(options.output);
-							expected = true;
-
-							assert.strictEqual(actual, expected);
-						});
-					});
-				});
-			});
+			should.exist('./tmp/sync/test.json');
+			should.deepEqual(fs.readJsonSync('./tmp/sync/test.json'), validJSON);
 		});
 	});
 
-})();
+	describe('async', function () {
+		it('should return an error on no input', function () {
+			app.async({}, function (err, data) {
+				should.exist(err);
+				should.strictEqual(err, 'No file was sent.');
+				should.not.exist(data);
+			});
+		});
+
+		it('should return err when input is not a file', function () {
+			app.async({input: 'test/foo.scss'}, function (err, data) {
+				should.exist(err);
+				should.strictEqual(err, 'Could not open input file...');
+				should.not.exist(data);
+			});
+		});
+
+		it('should return false when input is a directory', function () {
+			app.async({input: 'test/'}, function (err, data) {
+				should.exist(err);
+				should.strictEqual(err, 'Could not open input file...');
+				should.not.exist(data);
+			});
+		});
+
+		it('should return an obj when no ouput is sent', function () {
+			app.async({input: 'test/colors.scss'}, function (err, data) {
+				should.not.exist(err);
+				should.deepEqual(data, validJSON);
+			});
+		});
+
+		it('should create file in CWD if no output directory is sent', function (done) {
+			options = {
+				input: 'test/colors.scss',
+				output: 'cwdAsync.json'
+			};
+
+			app.async(options, function (err, data) {
+				should.not.exist(err);
+				should.exist(data);
+				fs.readJson(data, function (err, data) {
+					should.not.exist(err);
+					should.deepEqual(data, validJSON);
+					done();
+				});
+			});
+		});
+
+		it('creates file in directory you send', function (done) {
+			options = {
+				input: 'test/colors.scss',
+				output: 'tmp/async/'
+			};
+			app.async(options, function (err, data) {
+				should.not.exist(err);
+				should.exist(data);
+
+				fs.readJson(data, function (err, data) {
+					should.not.exist(err);
+					should.deepEqual(data, validJSON);
+					done();
+				});
+			});
+		});
+
+		it('creates file in directory you send', function (done) {
+			options = {
+				input: 'test/colors.scss',
+				output: 'tmp/async/test.json'
+			};
+			app.async(options, function (err, data) {
+				should.not.exist(err);
+				should.exist(data);
+
+				fs.readJson(data, function (err, data) {
+					should.not.exist(err);
+					should.deepEqual(data, validJSON);
+					done();
+				});
+			});
+
+		});
+	});
+
+	after('Just tidying up...', function () {
+		fs.removeSync('tmp/');
+		fs.removeSync('./cwdSync.json');
+		fs.removeSync('./cwdAsync.json');
+	});
+});
