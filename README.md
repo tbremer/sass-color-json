@@ -1,10 +1,10 @@
 #**SASS-COLOR-JSON**
 *Convert any SASS file with color variables to a json file.*
 
-![Travis CI](https://img.shields.io/travis/tbremer/sass-color-json.svg?style=flat-square)
-![Version](https://img.shields.io/npm/v/sass-color-json.svg?style=flat-square)
-![NPM Downloads](https://img.shields.io/npm/dm/sass-color-json.svg?style=flat-square)
-![LICENSE](https://img.shields.io/npm/l/sass-color-json.svg?style=flat-square)
+[![Travis CI](https://img.shields.io/travis/tbremer/sass-color-json.svg?style=flat-square)](https://travis-ci.org/tbremer/sass-color-json)
+[![Version](https://img.shields.io/npm/v/sass-color-json.svg?style=flat-square)](https://www.npmjs.com/package/sass-color-json)
+[![NPM Downloads](https://img.shields.io/npm/dm/sass-color-json.svg?style=flat-square)](https://www.npmjs.com/package/sass-color-json)
+[![LICENSE](https://img.shields.io/npm/l/sass-color-json.svg?style=flat-square)](https://github.com/tbremer/sass-color-json/blob/master/LICENSE)
 
 We currently support:  hex colors (3 or 6 character), rgb, hsl, rgba & hsla.
 
