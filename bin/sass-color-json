@@ -19,4 +19,4 @@ options = {
 	'output': parsed.output || false,
 };
 
-app(options);
+app.sync(options);

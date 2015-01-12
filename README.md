@@ -10,6 +10,8 @@ We currently support:  hex colors (3 or 6 character), rgb, hsl, rgba & hsla.
 
 Module can be used as  CLI or within your node project.
 
+As of version 0.2.0 We now have a Synchronous (0.1.0) and Asynchronous version. The CLI still relies on the synchronous version. No other options have changed. The script overall was made shorter and faster.
+
 ###Options (as json object {})
 **input**
 
@@ -49,13 +51,28 @@ $ sass-color-json --input ~/_colors.scss --output ~/colors.json
 
 *Node Module*
 ```javascript
+/**
+ * BLOCKING SYNC VERSION
+**/
 var sassColorJson = require('sass-color-json'),
-	sassColorOptions = {
-		input: '_colors.scss'
-	},
-	jsonObj = sassColorJson(sassColorOptions);
+  sassColorOptions = {
+    input: '_colors.scss'
+  },
+  jsonObj = sassColorJson.sync(sassColorOptions);
 
 console.log(jsonObj);
+
+/**
+ * NON-BLOCKING ASYNC VERSION
+ * Async keeps all the same functionality as previous versions, but is non-blocking.
+**/
+sassColorJson.async(sassColorOptions, function (err, data) {
+  if (err) {
+    throw new Error('Error: ' + err);
+  }
+
+  console.log(data);
+});
 ```
 
 *Output:*
@@ -151,4 +168,4 @@ console.log(jsonObj);
 ###*Notes*
 If no output is suppled the module returns JSON Object.
 
-If output is only a directory module uses name `sass-variables.json`
+If output is only a directory module assumes filename `sass-variables.json`
