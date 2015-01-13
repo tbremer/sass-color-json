@@ -1,8 +1,11 @@
 {
   "name": "sass-color-json",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Generate json based on SASS color variables.",
-  "author": "Thomas Bremer",
+  "author": {
+    "name":"Thomas Bremer",
+    "email": "tom@tbremer.com"
+  },
   "contributors": [],
   "license": "MIT",
   "main": "index.js",
@@ -11,7 +14,6 @@
     "test": "mocha **/test.js",
     "posttest": "node test/cleanup.js"
   },
-  "preferGlobal": true,
   "bin": {
     "sass-color-json": "bin/sass-color-json"
   },
