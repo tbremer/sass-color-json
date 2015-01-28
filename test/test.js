@@ -58,6 +58,19 @@ describe('sass-color-json', function () {
 			should.exist('./tmp/sync/test.json');
 			should.deepEqual(fs.readJsonSync('./tmp/sync/test.json'), validJSON);
 		});
+
+		it('should allow strings to be passed instead of files', function () {
+			var buffer = fs.readFileSync('test/colors.scss', 'utf8');
+			options = {
+				input: buffer,
+				isString: true
+			};
+
+			actual = app.sync(options);
+			expected = validJSON;
+
+			should.deepEqual(actual, expected);
+		});
 	});
 
 	describe('async', function () {
@@ -141,7 +154,24 @@ describe('sass-color-json', function () {
 					done();
 				});
 			});
+		});
 
+		it('should allow strings to be passed instead of files', function (done) {
+			var buffer = fs.readFileSync('test/colors.scss', 'utf8');
+			options = {
+				input: buffer,
+				isString: true
+			};
+
+			actual = app.async(options, function (err, data) {
+				should.not.exist(err);
+				should.exist(data);
+
+
+				should.deepEqual(data, validJSON);
+
+				done();
+			});
 		});
 	});
 

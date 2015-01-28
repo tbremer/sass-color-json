@@ -32,6 +32,13 @@ Default: `False`
 
 When not supplied: `Returns JSON object`
 
+**isString**
+Require: `False`
+
+Type: `Boolean`
+
+Default: `False`
+
 
 ###Example
 *SASS / SCSS*
@@ -72,6 +79,28 @@ sassColorJson.async(sassColorOptions, function (err, data) {
   }
 
   console.log(data);
+});
+
+/**
+ * Processing Strings
+**/
+var buffer = fs.readFile('_colors.scss', function (err, data) {
+    if (err) {
+        throw new Error('Error: ' + err);
+    }
+
+    var sassColorOptions = {
+        input: data,
+        isString: true
+    };
+
+    sassColorJson.async(sassColorOptions, function (err, data) {
+      if (err) {
+        throw new Error('Error: ' + err);
+      }
+
+      console.log(data);
+    });
 });
 ```
 

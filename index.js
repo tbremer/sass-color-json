@@ -57,7 +57,6 @@ var createObj = function (array) {
 	});
 
 	return obj;
-
 };
 
 var createArray = function (str) {
@@ -76,13 +75,32 @@ var checkOutput = function (output) {
 	return (path.extname(output) === '') ? path.normalize(output + '/sass-variables.json') : output;
 };
 
+var prepareOutput = function (data, output, callback) {
+	var array = createArray(data),
+		obj = createObj(array);
+
+	if (output === false) {
+		return callback(null, obj);
+	}
+
+	output = checkOutput(output);
+	fs.outputJson(output, obj, function (err) {
+		if (err) {
+			return callback('Could not write file...');
+		}
+
+		return callback(null, output);
+	});
+};
+
 globalRegPattern = /(\$[a-z0-9-_]+:)(\s+)(#|\$|rgba|hsla|rgb|hsl)((?:\(|)[$0-9a-z-_,\.\s]+(?:\)|);)/ig;
 singleRegPattern = /(\$[a-z0-9-_]+:)(\s+)(#|\$|rgba|hsla|rgb|hsl)((?:\(|)[$0-9a-z-_,\.\s]+(?:\)|);)/i;
 
 module.exports = {
 	async: function (options, callback) {
 		var input = options.input || false,
-				output = options.output || false;
+			output = options.output || false,
+			isString = options.isString || false;
 
 		if (typeof callback !== 'function') {
 			return false;
@@ -92,40 +110,31 @@ module.exports = {
 			return callback('No file was sent.');
 		}
 
+		if (isString === true) {
+			return prepareOutput(input, output, callback);
+		}
+
 		fs.readFile(input, 'utf8', function (err, data) {
 			if (err) {
 				return callback('Could not open input file...');
 			}
 
-			var array = createArray(data),
-					obj = createObj(array);
-
-			if (output === false) {
-				return callback(null, obj);
-			}
-
-			output = checkOutput(output);
-			fs.outputJson(output, obj, function (err) {
-				if (err) {
-					return callback('Could not write file...');
-				}
-
-				return callback(null, output);
-			});
-
+			return prepareOutput(data, output, callback);
 		});
 	},
 
 	sync: function (options) {
 		var input = options.input || false,
-				output = options.output || false;
+			isString = options.isString || false,
+			output = options.output || false,
+			buffer, obj;
 
-		if (input === false || input === '' || fs.existsSync(input) === false || fs.statSync(input).isDirectory()) {
+		if (isString === false && (input === false || input === '' || fs.existsSync(input) === false || fs.statSync(input).isDirectory())) {
 			return false;
 		}
 
-		var buffer = createArray(fs.readFileSync(input, "utf8")),
-				obj = createObj(buffer);
+		buffer = createArray(isString === true ? input : fs.readFileSync(input, "utf8"));
+		obj = createObj(buffer);
 
 		if (output === false) {
 			return obj;
