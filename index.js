@@ -2,7 +2,8 @@
 var path = require('path'),
 		fs = require('fs-extra'),
 		_ = require('underscore'),
-		strip = require('strip-comments');
+		strip = require('strip-comments'),
+		globalRegPattern, singleRegPattern;
 
 var createObj = function (array) {
 	if (_.isArray(array) === false || array === undefined) {
@@ -75,7 +76,7 @@ var checkOutput = function (output) {
 	return (path.extname(output) === '') ? path.normalize(output + '/sass-variables.json') : output;
 };
 
-var globalRegPattern = /(\$[a-z0-9-_]+:)(\s+)(#|\$|rgba|hsla|rgb|hsl)((?:\(|)[$0-9a-z-_,\.\s]+(?:\)|);)/ig,
+globalRegPattern = /(\$[a-z0-9-_]+:)(\s+)(#|\$|rgba|hsla|rgb|hsl)((?:\(|)[$0-9a-z-_,\.\s]+(?:\)|);)/ig;
 singleRegPattern = /(\$[a-z0-9-_]+:)(\s+)(#|\$|rgba|hsla|rgb|hsl)((?:\(|)[$0-9a-z-_,\.\s]+(?:\)|);)/i;
 
 module.exports = {
