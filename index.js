@@ -1,4 +1,3 @@
-'use strict';
 var path = require('path'),
 		fs = require('fs-extra'),
 		_ = require('underscore'),
@@ -15,8 +14,8 @@ var createObj = function (array) {
 	_.each(array, function (el, i) {
 		var tmp = el.match(singleRegPattern),
 		name = tmp[1] || false,
-		type = tmp[3] || false,
-		value = tmp[4] || false,
+		type = tmp[2] || false,
+		value = tmp[3] || false,
 		original = tmp.input || false,
 		originalName, originalValue, full;
 
@@ -24,14 +23,12 @@ var createObj = function (array) {
 			return false;
 		}
 
-		if (name !== false) {
-			originalName = name;
-			name = name.substring(1, (name.length-1));
-		}
+		originalName = name;
+		name = name.trim();
 
 		if (value !== false) {
 			originalValue = value;
-			value = value.substring(0,(value.length-1));
+			value = value.trim();
 		}
 
 		if (value in obj) {
@@ -44,7 +41,7 @@ var createObj = function (array) {
 		obj[name] = {
 			'aliases': false,
 			'isAlias': ((value in obj) ? true : false),
-			'full': (originalName + ' ' + type + originalValue),
+			'full': ('$' + name + ': ' + type + value + ';'),
 			'original': {
 				'name': originalName,
 				'value': originalValue,
@@ -93,8 +90,8 @@ var prepareOutput = function (data, output, callback) {
 	});
 };
 
-globalRegPattern = /(\$[a-z0-9-_]+:)(\s+)(#|\$|rgba|hsla|rgb|hsl)((?:\(|)[$0-9a-z-_,\.\s]+(?:\)|);)/ig;
-singleRegPattern = /(\$[a-z0-9-_]+:)(\s+)(#|\$|rgba|hsla|rgb|hsl)((?:\(|)[$0-9a-z-_,\.\s]+(?:\)|);)/i;
+globalRegPattern = /\$([a-z0-9-_]+):\s*(#|\$|rgba|hsla|rgb|hsl)((?:\(|)[$0-9a-z-_,\.\s]+(?:\)|))\s*(\!default|\!global)?;/ig;
+singleRegPattern = /\$([a-z0-9-_]+):\s*(#|\$|rgba|hsla|rgb|hsl)((?:\(|)[$0-9a-z-_,\.\s]+(?:\)|))\s*(\!default|\!global)?;/i;
 
 module.exports = {
 	async: function (options, callback) {
