@@ -71,6 +71,33 @@ describe('sass-color-json', function () {
 
 			should.deepEqual(actual, expected);
 		});
+
+		it('variables with flags should be allowed', function () {
+			var scssDefault = '$test-defaults: #123 !default;';
+			options = {
+				input: scssDefault,
+				isString: true
+			};
+
+			actual = app.sync(options);
+			expected = {
+				"test-defaults": {
+					"aliases": false,
+					"isAlias": false,
+					"full": "$test-defaults: #123;",
+					"original": {
+						"name": "test-defaults",
+						"value": "123 ",
+						"full": "$test-defaults: #123 !default;"
+					},
+					"name": "test-defaults",
+					"type": "#",
+					"value": "123"
+				}
+			};
+
+			should.deepEqual(actual, expected);
+		});
 	});
 
 	describe('async', function () {
@@ -169,6 +196,39 @@ describe('sass-color-json', function () {
 
 
 				should.deepEqual(data, validJSON);
+
+				done();
+			});
+		});
+
+		it('variables with flags should be allowed', function (done) {
+			var scssDefault = '$test-defaults: #123 !default;';
+			options = {
+				input: scssDefault,
+				isString: true
+			};
+			expected = {
+				"test-defaults": {
+					"aliases": false,
+					"isAlias": false,
+					"full": "$test-defaults: #123;",
+					"original": {
+						"name": "test-defaults",
+						"value": "123 ",
+						"full": "$test-defaults: #123 !default;"
+					},
+					"name": "test-defaults",
+					"type": "#",
+					"value": "123"
+				}
+			};
+
+			actual = app.async(options, function(err, data) {
+				should.not.exist(err);
+				should.exist(data);
+
+
+				should.deepEqual(data, expected);
 
 				done();
 			});

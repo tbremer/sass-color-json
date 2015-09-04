@@ -127,6 +127,7 @@ module.exports = {
 			buffer, obj;
 
 		if (isString === false && (input === false || input === '' || fs.existsSync(input) === false || fs.statSync(input).isDirectory())) {
+
 			return false;
 		}
 
