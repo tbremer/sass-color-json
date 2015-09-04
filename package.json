@@ -1,9 +1,9 @@
 {
   "name": "sass-color-json",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Generate json based on SASS color variables.",
   "author": {
-    "name":"Thomas Bremer",
+    "name": "Thomas Bremer",
     "email": "tom@tbremer.com"
   },
   "contributors": [],
