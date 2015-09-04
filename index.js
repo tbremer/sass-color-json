@@ -16,6 +16,7 @@ var createObj = function (array) {
 		name = tmp[1] || false,
 		type = tmp[2] || false,
 		value = tmp[3] || false,
+		flag = tmp[4] || false,
 		original = tmp.input || false,
 		originalName, originalValue, full;
 
@@ -38,18 +39,22 @@ var createObj = function (array) {
 			obj[value].aliases.push(name);
 		}
 
+		full = '$' + name + ': ' + type + value + (flag ? ' ' + flag : '' ) + ';';
+
 		obj[name] = {
 			'aliases': false,
 			'isAlias': ((value in obj) ? true : false),
-			'full': ('$' + name + ': ' + type + value + ';'),
+			'full': full,
 			'original': {
 				'name': originalName,
 				'value': originalValue,
-				'full': original
+				'full': original,
+				'flag': flag
 			},
 			'name': name,
 			'type': type,
 			'value': value,
+			'flag': flag
 		};
 	});
 

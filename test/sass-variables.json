@@ -6,11 +6,13 @@
     "original": {
       "name": "black",
       "value": "373a3e",
-      "full": "$black:     #373a3e;"
+      "full": "$black:     #373a3e;",
+      "flag": false
     },
     "name": "black",
     "type": "#",
-    "value": "373a3e"
+    "value": "373a3e",
+    "flag": false
   },
   "black_a50": {
     "aliases": false,
@@ -19,11 +21,13 @@
     "original": {
       "name": "black_a50",
       "value": "($black, 0.5)",
-      "full": "$black_a50: rgba($black, 0.5);"
+      "full": "$black_a50: rgba($black, 0.5);",
+      "flag": false
     },
     "name": "black_a50",
     "type": "rgba",
-    "value": "($black, 0.5)"
+    "value": "($black, 0.5)",
+    "flag": false
   },
   "black_a20": {
     "aliases": false,
@@ -32,11 +36,13 @@
     "original": {
       "name": "black_a20",
       "value": "($black, 0.2)",
-      "full": "$black_a20: rgba($black, 0.2);"
+      "full": "$black_a20: rgba($black, 0.2);",
+      "flag": false
     },
     "name": "black_a20",
     "type": "rgba",
-    "value": "($black, 0.2)"
+    "value": "($black, 0.2)",
+    "flag": false
   },
   "black_a10": {
     "aliases": false,
@@ -45,11 +51,13 @@
     "original": {
       "name": "black_a10",
       "value": "($black, 0.1)",
-      "full": "$black_a10: rgba($black, 0.1);"
+      "full": "$black_a10: rgba($black, 0.1);",
+      "flag": false
     },
     "name": "black_a10",
     "type": "rgba",
-    "value": "($black, 0.1)"
+    "value": "($black, 0.1)",
+    "flag": false
   },
   "blue": {
     "aliases": [
@@ -62,11 +70,13 @@
     "original": {
       "name": "blue",
       "value": "136ad5",
-      "full": "$blue:        #136ad5;"
+      "full": "$blue:        #136ad5;",
+      "flag": false
     },
     "name": "blue",
     "type": "#",
-    "value": "136ad5"
+    "value": "136ad5",
+    "flag": false
   },
   "newblue": {
     "aliases": false,
@@ -75,11 +85,13 @@
     "original": {
       "name": "newblue",
       "value": "blue",
-      "full": "$newblue: $blue;"
+      "full": "$newblue: $blue;",
+      "flag": false
     },
     "name": "newblue",
     "type": "$",
-    "value": "blue"
+    "value": "blue",
+    "flag": false
   },
   "new-blue": {
     "aliases": false,
@@ -88,11 +100,13 @@
     "original": {
       "name": "new-blue",
       "value": "blue",
-      "full": "$new-blue: $blue;"
+      "full": "$new-blue: $blue;",
+      "flag": false
     },
     "name": "new-blue",
     "type": "$",
-    "value": "blue"
+    "value": "blue",
+    "flag": false
   },
   "new_blue": {
     "aliases": false,
@@ -101,49 +115,57 @@
     "original": {
       "name": "new_blue",
       "value": "blue",
-      "full": "$new_blue: $blue;"
+      "full": "$new_blue: $blue;",
+      "flag": false
     },
     "name": "new_blue",
     "type": "$",
-    "value": "blue"
+    "value": "blue",
+    "flag": false
   },
   "cobalt": {
     "aliases": false,
     "isAlias": false,
-    "full": "$cobalt: #2267a3;",
+    "full": "$cobalt: #2267a3 !default;",
     "original": {
       "name": "cobalt",
       "value": "2267a3 ",
-      "full": "$cobalt: #2267a3 !default;"
+      "full": "$cobalt: #2267a3 !default;",
+      "flag": "!default"
     },
     "name": "cobalt",
     "type": "#",
-    "value": "2267a3"
+    "value": "2267a3",
+    "flag": "!default"
   },
   "cobalt-shade": {
     "aliases": false,
     "isAlias": false,
-    "full": "$cobalt-shade: #14496c;",
+    "full": "$cobalt-shade: #14496c !default;",
     "original": {
       "name": "cobalt-shade",
       "value": "14496c ",
-      "full": "$cobalt-shade: #14496c !default;"
+      "full": "$cobalt-shade: #14496c !default;",
+      "flag": "!default"
     },
     "name": "cobalt-shade",
     "type": "#",
-    "value": "14496c"
+    "value": "14496c",
+    "flag": "!default"
   },
   "cobalt-tint": {
     "aliases": false,
     "isAlias": false,
-    "full": "$cobalt-tint: #3288c9;",
+    "full": "$cobalt-tint: #3288c9 !default;",
     "original": {
       "name": "cobalt-tint",
       "value": "3288c9 ",
-      "full": "$cobalt-tint: #3288c9 !default;"
+      "full": "$cobalt-tint: #3288c9 !default;",
+      "flag": "!default"
     },
     "name": "cobalt-tint",
     "type": "#",
-    "value": "3288c9"
+    "value": "3288c9",
+    "flag": "!default"
   }
 }

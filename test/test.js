@@ -84,15 +84,17 @@ describe('sass-color-json', function () {
 				"test-defaults": {
 					"aliases": false,
 					"isAlias": false,
-					"full": "$test-defaults: #123;",
+					"full": "$test-defaults: #123 !default;",
 					"original": {
 						"name": "test-defaults",
 						"value": "123 ",
-						"full": "$test-defaults: #123 !default;"
+						"full": "$test-defaults: #123 !default;",
+						"flag": "!default"
 					},
 					"name": "test-defaults",
 					"type": "#",
-					"value": "123"
+					"value": "123",
+					"flag": "!default"
 				}
 			};
 
@@ -202,7 +204,7 @@ describe('sass-color-json', function () {
 		});
 
 		it('variables with flags should be allowed', function (done) {
-			var scssDefault = '$test-defaults: #123 !default;';
+			var scssDefault = '$test-defaults: #123 !global;';
 			options = {
 				input: scssDefault,
 				isString: true
@@ -211,15 +213,17 @@ describe('sass-color-json', function () {
 				"test-defaults": {
 					"aliases": false,
 					"isAlias": false,
-					"full": "$test-defaults: #123;",
+					"full": "$test-defaults: #123 !global;",
 					"original": {
 						"name": "test-defaults",
 						"value": "123 ",
-						"full": "$test-defaults: #123 !default;"
+						"full": "$test-defaults: #123 !global;",
+						"flag": "!global"
 					},
 					"name": "test-defaults",
 					"type": "#",
-					"value": "123"
+					"value": "123",
+					"flag": "!global"
 				}
 			};
 
